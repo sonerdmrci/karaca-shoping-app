@@ -13,6 +13,11 @@
 		B5D8797F2B4169F1007D1C65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D8797D2B4169F1007D1C65 /* Main.storyboard */; };
 		B5D879812B4169F4007D1C65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D879802B4169F4007D1C65 /* Assets.xcassets */; };
 		B5D879842B4169F4007D1C65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D879822B4169F4007D1C65 /* LaunchScreen.storyboard */; };
+		B5D879932B418374007D1C65 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D879922B418374007D1C65 /* CategoriesViewController.swift */; };
+		B5D8799C2B418689007D1C65 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8799A2B418689007D1C65 /* CategoryTableViewCell.swift */; };
+		B5D8799D2B418689007D1C65 /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D8799B2B418689007D1C65 /* CategoryTableViewCell.xib */; };
+		B5D879A02B418D35007D1C65 /* MyCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8799F2B418D35007D1C65 /* MyCartViewController.swift */; };
+		B5D879A32B41968F007D1C65 /* CategoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D879A22B41968F007D1C65 /* CategoryType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		B5D879802B4169F4007D1C65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5D879832B4169F4007D1C65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5D879852B4169F4007D1C65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5D879922B418374007D1C65 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		B5D8799A2B418689007D1C65 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		B5D8799B2B418689007D1C65 /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
+		B5D8799F2B418D35007D1C65 /* MyCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCartViewController.swift; sourceTree = "<group>"; };
+		B5D879A22B41968F007D1C65 /* CategoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,124 @@
 		B5D879762B4169F1007D1C65 /* KaracaApp */ = {
 			isa = PBXGroup;
 			children = (
+				B5D879952B41850C007D1C65 /* ViewControlers */,
+				B5D879942B4184F4007D1C65 /* Extensions */,
+				B5D879992B418632007D1C65 /* Components */,
+				B5D879982B41859D007D1C65 /* Services */,
+				B5D8798B2B416A46007D1C65 /* Support */,
+				B5D8797D2B4169F1007D1C65 /* Main.storyboard */,
 				B5D879772B4169F1007D1C65 /* AppDelegate.swift */,
 				B5D879792B4169F1007D1C65 /* SceneDelegate.swift */,
-				B5D8797B2B4169F1007D1C65 /* ViewController.swift */,
-				B5D8797D2B4169F1007D1C65 /* Main.storyboard */,
 				B5D879802B4169F4007D1C65 /* Assets.xcassets */,
+			);
+			path = KaracaApp;
+			sourceTree = "<group>";
+		};
+		B5D8798B2B416A46007D1C65 /* Support */ = {
+			isa = PBXGroup;
+			children = (
 				B5D879822B4169F4007D1C65 /* LaunchScreen.storyboard */,
 				B5D879852B4169F4007D1C65 /* Info.plist */,
 			);
-			path = KaracaApp;
+			path = Support;
+			sourceTree = "<group>";
+		};
+		B5D8798C2B416B84007D1C65 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B5D8797B2B4169F1007D1C65 /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B5D8798D2B416B95007D1C65 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B5D8798E2B416D86007D1C65 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B5D879A12B419670007D1C65 /* Type */,
+				B5D879922B418374007D1C65 /* CategoriesViewController.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		B5D8798F2B4176E7007D1C65 /* MyCart */ = {
+			isa = PBXGroup;
+			children = (
+				B5D8799F2B418D35007D1C65 /* MyCartViewController.swift */,
+			);
+			path = MyCart;
+			sourceTree = "<group>";
+		};
+		B5D879902B41773A007D1C65 /* MyAccount */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyAccount;
+			sourceTree = "<group>";
+		};
+		B5D879912B417782007D1C65 /* Gift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Gift;
+			sourceTree = "<group>";
+		};
+		B5D879942B4184F4007D1C65 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B5D879952B41850C007D1C65 /* ViewControlers */ = {
+			isa = PBXGroup;
+			children = (
+				B5D8798D2B416B95007D1C65 /* Login */,
+				B5D8798F2B4176E7007D1C65 /* MyCart */,
+				B5D879902B41773A007D1C65 /* MyAccount */,
+				B5D8798C2B416B84007D1C65 /* Main */,
+				B5D8798E2B416D86007D1C65 /* Categories */,
+				B5D879912B417782007D1C65 /* Gift */,
+			);
+			path = ViewControlers;
+			sourceTree = "<group>";
+		};
+		B5D879982B41859D007D1C65 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B5D879992B418632007D1C65 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B5D8799E2B418CB1007D1C65 /* CtegoryTableViewCell */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B5D8799E2B418CB1007D1C65 /* CtegoryTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B5D8799A2B418689007D1C65 /* CategoryTableViewCell.swift */,
+				B5D8799B2B418689007D1C65 /* CategoryTableViewCell.xib */,
+			);
+			path = CtegoryTableViewCell;
+			sourceTree = "<group>";
+		};
+		B5D879A12B419670007D1C65 /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				B5D879A22B41968F007D1C65 /* CategoryType.swift */,
+			);
+			path = Type;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +247,7 @@
 				B5D879842B4169F4007D1C65 /* LaunchScreen.storyboard in Resources */,
 				B5D879812B4169F4007D1C65 /* Assets.xcassets in Resources */,
 				B5D8797F2B4169F1007D1C65 /* Main.storyboard in Resources */,
+				B5D8799D2B418689007D1C65 /* CategoryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +260,11 @@
 			files = (
 				B5D8797C2B4169F1007D1C65 /* ViewController.swift in Sources */,
 				B5D879782B4169F1007D1C65 /* AppDelegate.swift in Sources */,
+				B5D879932B418374007D1C65 /* CategoriesViewController.swift in Sources */,
+				B5D879A32B41968F007D1C65 /* CategoryType.swift in Sources */,
 				B5D8797A2B4169F1007D1C65 /* SceneDelegate.swift in Sources */,
+				B5D879A02B418D35007D1C65 /* MyCartViewController.swift in Sources */,
+				B5D8799C2B418689007D1C65 /* CategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +413,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 64F5Q6KZ67;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KaracaApp/Info.plist;
+				INFOPLIST_FILE = KaracaApp/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +441,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 64F5Q6KZ67;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KaracaApp/Info.plist;
+				INFOPLIST_FILE = KaracaApp/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -1,24 +1,243 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Yi-QV-GyX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Tab Bar Controller-->
+        <scene sceneID="4Vg-AV-a7i">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tabBarController id="2Yi-QV-GyX" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" id="5uu-s6-X88">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="YP8-Fp-FGc" kind="relationship" relationship="viewControllers" id="oyh-x6-2hf"/>
+                        <segue destination="tFm-Xc-ykH" kind="relationship" relationship="viewControllers" id="bDB-jt-4DR"/>
+                        <segue destination="vbs-ab-fmr" kind="relationship" relationship="viewControllers" id="R1N-N9-E0S"/>
+                        <segue destination="gJo-eg-47z" kind="relationship" relationship="viewControllers" id="Kxe-f1-U4L"/>
+                        <segue destination="CVA-yr-XQv" kind="relationship" relationship="viewControllers" id="hqc-Dd-r4I"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="et7-tk-8Bh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1517" y="-47"/>
+        </scene>
+        <!--ANASAYFA-->
+        <scene sceneID="YzD-Og-laR">
+            <objects>
+                <viewController id="Y24-1U-6hD" customClass="ViewController" customModule="KaracaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zIK-bj-Ztl">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="nVi-tb-y7Q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ANASAYFA" id="VL9-3J-4Ym"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DA1-gs-ln5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1517" y="1415"/>
+        </scene>
+        <!--SEPETIM-->
+        <scene sceneID="I5J-sh-S3k">
+            <objects>
+                <viewController id="MpL-vr-kCy" customClass="MyCartViewController" customModule="KaracaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VdP-4H-4HL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5D-mo-xrg">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="90D-yj-cQj">
+                                        <rect key="frame" x="76" y="72" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Tko-Hw-CkJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tko-Hw-CkJ" firstAttribute="bottom" secondItem="s5D-mo-xrg" secondAttribute="bottom" id="88R-V1-3Zr"/>
+                            <constraint firstItem="s5D-mo-xrg" firstAttribute="leading" secondItem="Tko-Hw-CkJ" secondAttribute="leading" id="bRB-KY-QBU"/>
+                            <constraint firstItem="Tko-Hw-CkJ" firstAttribute="trailing" secondItem="s5D-mo-xrg" secondAttribute="trailing" id="mF7-dq-iow"/>
+                            <constraint firstItem="s5D-mo-xrg" firstAttribute="top" secondItem="Tko-Hw-CkJ" secondAttribute="top" id="qPL-H5-sGh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="SEPETIM" id="tDF-3h-5Pc"/>
+                    <connections>
+                        <outlet property="imageView" destination="90D-yj-cQj" id="gis-D4-Cza"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bXX-8O-7G9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="769" y="1415"/>
+        </scene>
+        <!--HEDIYE-->
+        <scene sceneID="Bci-0X-WyP">
+            <objects>
+                <viewController id="MC8-WD-WDt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8By-CD-xco">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7xi-A5-1j5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="HEDIYE" id="ezs-IT-QgD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OQe-rL-aJF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3123" y="1415"/>
+        </scene>
+        <!--HESABIM-->
+        <scene sceneID="d5A-SV-eS4">
+            <objects>
+                <viewController id="DUH-AE-AdF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hB5-73-zOv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="raT-mP-rP1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="HESABIM" id="Bj2-8G-edW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hu2-AD-Xui" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2314" y="1415"/>
+        </scene>
+        <!--KATEGORILER-->
+        <scene sceneID="NjR-Fc-1Bc">
+            <objects>
+                <viewController id="RZd-cS-58V" customClass="CategoriesViewController" customModule="KaracaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fqZ-Lx-roN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Tln-ut-VyF">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aMK-2N-5Ge"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tln-ut-VyF" firstAttribute="top" secondItem="aMK-2N-5Ge" secondAttribute="top" id="Bwd-Rc-uUT"/>
+                            <constraint firstItem="Tln-ut-VyF" firstAttribute="leading" secondItem="aMK-2N-5Ge" secondAttribute="leading" id="Loz-bf-4ov"/>
+                            <constraint firstItem="aMK-2N-5Ge" firstAttribute="trailing" secondItem="Tln-ut-VyF" secondAttribute="trailing" id="lmh-8H-I43"/>
+                            <constraint firstItem="aMK-2N-5Ge" firstAttribute="bottom" secondItem="Tln-ut-VyF" secondAttribute="bottom" id="tMD-qb-Muc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="KATEGORILER" id="7H0-3m-hVY"/>
+                    <connections>
+                        <outlet property="tableView" destination="Tln-ut-VyF" id="g4A-Rv-2qC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dbm-1y-QVH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-19" y="1415"/>
+        </scene>
+        <!--ANASAYFA-->
+        <scene sceneID="ay9-lc-SPj">
+            <objects>
+                <navigationController id="vbs-ab-fmr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="ANASAYFA" image="home" id="Gtp-Vk-dIt"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aOs-ui-cuh">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y24-1U-6hD" kind="relationship" relationship="rootViewController" id="NT3-od-PRT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qIY-cA-F9s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1517" y="687"/>
+        </scene>
+        <!--SEPETIM-->
+        <scene sceneID="yat-ON-y7x">
+            <objects>
+                <navigationController id="tFm-Xc-ykH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="SEPETIM" image="shopping-cart" id="nb2-ym-a0z"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dv5-OM-Vfp">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MpL-vr-kCy" kind="relationship" relationship="rootViewController" id="gyE-77-Zoo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iVR-0V-8ja" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="769" y="687"/>
+        </scene>
+        <!--HEDIYE-->
+        <scene sceneID="zP6-Bi-XfU">
+            <objects>
+                <navigationController id="CVA-yr-XQv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="HEDIYE" image="gift-box-with-a-bow" id="NeK-Pg-M8l"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="fZ5-bF-fYZ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MC8-WD-WDt" kind="relationship" relationship="rootViewController" id="3Xb-Sd-IB7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aAc-BU-8Nl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3123" y="687"/>
+        </scene>
+        <!--HESABIM-->
+        <scene sceneID="eDI-6c-TWY">
+            <objects>
+                <navigationController id="gJo-eg-47z" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="HESABIM" image="user" id="mBq-4U-efx"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="bdR-4T-Wtm">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DUH-AE-AdF" kind="relationship" relationship="rootViewController" id="QVh-Jy-p6d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3E-sT-uUc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2314" y="687"/>
+        </scene>
+        <!--KATEGORILER-->
+        <scene sceneID="wy6-eF-mdT">
+            <objects>
+                <navigationController id="YP8-Fp-FGc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="KATEGORILER" image="categories 1" id="fQ1-QC-9OS"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MKX-LB-PnB">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RZd-cS-58V" kind="relationship" relationship="rootViewController" id="4wA-sY-lil"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ex4-KF-JMm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18" y="687"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="categories 1" width="16" height="16"/>
+        <image name="gift-box-with-a-bow" width="16" height="16"/>
+        <image name="home" width="16" height="16"/>
+        <image name="shopping-cart" width="16" height="16"/>
+        <image name="user" width="16" height="16"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
